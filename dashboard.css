@@ -1,0 +1,200 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fde9d9;
+}
+
+/* main white card */
+.page {
+    max-width: 960px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+/* header */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.topbar h1 {
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+.small-text {
+    margin: 3px 0 0;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.greeting {
+    text-align: right;
+    font-size: 0.9rem;
+}
+
+/* nav */
+.nav {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.nav a {
+    margin-right: 12px;
+    text-decoration: none;
+    color: #ff7a3c;
+    font-size: 0.9rem;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* stats cards */
+.stats {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 150px;
+    background-color: #fff6f0;
+    border-radius: 6px;
+    padding: 10px 12px;
+    border: 1px solid #ffe2cf;
+}
+
+.card h3 {
+    margin: 0 0 5px;
+    font-size: 1rem;
+}
+
+.card p {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+/* cases list */
+.cases-section {
+    margin-bottom: 25px;
+}
+
+.cases-section h2,
+.add-section h2 {
+    margin-bottom: 8px;
+}
+
+.filter {
+    font-size: 0.9rem;
+}
+
+.case-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.case-item {
+    padding: 8px 10px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+
+.case-item span {
+    margin-right: 8px;
+}
+
+.tag {
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+}
+
+.tag-urgent {
+    background-color: #ffb3a1;
+}
+
+.tag-normal {
+    background-color: #d9f0ff;
+}
+
+.tag-status {
+    background-color: #e2e2e2;
+}
+
+/* add new case form */
+.add-section {
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+#caseForm {
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+#caseForm label {
+    margin-top: 8px;
+    font-size: 0.9rem;
+}
+
+#caseForm input,
+#caseForm select {
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-top: 3px;
+    font-size: 0.9rem;
+}
+
+#caseForm button {
+    margin-top: 12px;
+    padding: 8px;
+    border: none;
+    background-color: #ff7a3c;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#caseForm button:hover {
+    opacity: 0.9;
+}
+
+.form-message {
+    margin-top: 8px;
+    font-size: 0.85rem;
+}
+
+/* footer */
+.footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #777;
+}
+
+/* simple responsive */
+@media (max-width: 600px) {
+    .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+}

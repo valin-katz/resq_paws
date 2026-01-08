@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ResQ Paws – Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+<div class="page">
+
+    <header class="topbar">
+        <div>
+            <h1>ResQ Paws Dashboard</h1>
+            <p class="small-text">Rescue & Volunteer management</p>
+        </div>
+        <div id="greeting" class="greeting">
+            <!-- Filled by JavaScript -->
+        </div>
+    </header>
+
+    <nav class="nav">
+        <a href="../index.html">Home</a>
+        <a href="../login/login.html">Login / Register</a>
+        <a href="#cases">Cases</a>
+        <a href="#add-case">Add Case</a>
+    </nav>
+
+    <main class="main">
+
+        <!-- Simple stats cards -->
+        <section class="stats">
+            <div class="card">
+                <h3>Total Rescues</h3>
+                <p id="totalRescues">0</p>
+            </div>
+            <div class="card">
+                <h3>Open Cases</h3>
+                <p id="openCases">0</p>
+            </div>
+            <div class="card">
+                <h3>Volunteers</h3>
+                <p id="volunteers">5</p>
+            </div>
+        </section>
+
+        <!-- List of cases -->
+        <section id="cases" class="cases-section">
+            <h2>Rescue Cases</h2>
+
+            <label class="filter">
+                <input type="checkbox" id="urgentFilter">
+                Show only urgent cases
+            </label>
+
+            <ul id="caseList" class="case-list">
+                <!-- Filled by JavaScript -->
+            </ul>
+        </section>
+
+        <!-- Add new case -->
+        <section id="add-case" class="add-section">
+            <h2>Add New Case</h2>
+
+            <form id="caseForm">
+                <label>Dog name</label>
+                <input type="text" id="dogName" placeholder="eg: Bheema" required>
+
+                <label>Location</label>
+                <input type="text" id="location" placeholder="Area / street" required>
+
+                <label>Priority</label>
+                <select id="priority" required>
+                    <option value="">Select</option>
+                    <option value="urgent">Urgent</option>
+                    <option value="normal">Normal</option>
+                </select>
+
+                <label>Status</label>
+                <select id="status" required>
+                    <option value="open">Open</option>
+                    <option value="in-progress">In progress</option>
+                    <option value="closed">Closed</option>
+                </select>
+
+                <button type="submit">Save Case</button>
+            </form>
+
+            <p id="formMessage" class="form-message"></p>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>Mini Project – ResQ Paws • Dashboard Page</p>
+    </footer>
+
+</div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>
